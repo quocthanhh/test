@@ -1,0 +1,286 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{a4wide,amssymb,epsfig,latexsym,multicol,array,hhline,fancyhdr}
+\usepackage{amsmath}
+\usepackage{lastpage}
+\usepackage[lined,boxed,commentsnumbered]{algorithm2e}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{tabularx, caption}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{rotating}
+\usepackage{graphics}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{epsfig}
+\usepackage{tikz}
+\usepackage{blindtext}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{array}
+\usetikzlibrary{arrows,snakes,backgrounds}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{xtab}
+\usepackage{indentfirst}
+\usepackage{zlmtt}
+\usepackage{fancyvrb}
+\usepackage{scrextend}
+\usepackage{array}
+\usepackage{caption}
+
+
+
+\definecolor{red}{rgb}{0.6,0,0} 
+\definecolor{blue}{rgb}{0,0,0.6}
+\definecolor{green}{rgb}{0,0.8,0}
+\definecolor{cyan}{rgb}{0.0,0.6,0.6}
+\definecolor{white}{rgb}{255.0,255.0,255.0}
+\definecolor{gamedev}{rgb}{0.145,0.55,0.8}
+
+
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gamedev}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+\newtheorem{theorem}{{\bf Theorem}}
+\newtheorem{property}{{\bf Property}}
+\newtheorem{proposition}{{\bf Proposition}}
+\newtheorem{corollary}[proposition]{{\bf Corollary}}
+\newtheorem{lemma}[proposition]{{\bf Lemma}}
+
+
+
+
+
+\hypersetup{urlcolor=blue,linkcolor=black,citecolor=black,colorlinks=true} 
+
+
+
+
+% Header and Footer
+\input{components/header_footer.tex}
+
+% Mục lục
+\input{components/contents_setup.tex}
+
+\changefontsizes{13pt}
+
+
+% Report
+% Report
+% Report
+% Report
+\begin{document}
+
+
+    \input{components/Front Page/front_page}
+    
+    \newpage
+        
+    \input{components/First words/guarantee.tex}
+    
+    \newpage
+        
+    \input{components/First words/open_words.tex}
+    
+    \newpage
+
+    \tableofcontents
+
+    \newpage
+
+    \input{components/Chapter 1/chapter_1.tex}
+
+    \newpage
+
+    \input{components/Chapter 2/chapter_2.tex}
+
+    \newpage
+
+    % \input{components/Chapter 1/chapter_1.tex}
+
+    % \newpage
+
+    
+
+
+%\thispagestyle{empty}
+
+% \newpage
+% wdwdwe
+% \newpage
+
+% \tableofcontents
+
+
+% \newpage
+
+
+% \section{GIỚI THIỆU DỰ ÁN THƯƠNG MẠI ĐIỆN TỬ}
+% \subsection{Tổng quan dự án trong bối cảnh Thương mại điện tử trong nước hiện nay}
+% Trước tình hình COVID-19 hiện tại, vấn đề học tập trực tuyến đang diễn ra khá phổ biến. Ở trường Đại học Bách Khoa, chương trình học cũng khá nặng, mỗi buổi học thì các bạn sinh viên cần phải tiếp thu rất nhiều kiến thức. Do đó, một số bạn có khả năng tiếp thu chậm hơn thì sẽ dễ bị ngộp và dẫn đến chán nản. Do đó ConceptCourse sinh ra nhằm giúp các bạn củng cố kiến thức, giúp các bạn có hứng thú hơn khi học môn học đó.
+
+% \subsubsection{Ý nghĩa và động lực của dự án}
+% Nền tảng học tập trực tuyến là một không gian web hoặc cổng thông tin cho nội dung và tài nguyên giáo dục cung cấp cho sinh viên mọi thứ họ cần ở một nơi: bài giảng, tài nguyên, cơ hội gặp gỡ và trò chuyện với các sinh viên khác, v.v. Đây cũng là một cách tuyệt vời để học sinh và giáo viên theo dõi sự tiến bộ của học sinh.
+
+% Học trực tuyến mang lại nhiều lợi ích:
+% \begin{itemize}
+% 	\item Giá rẻ
+% 	\item Sự thoải mái khi làm việc tại nhà
+% 	\item Tự học theo nhịp độ
+% 	\item Cải thiện kỹ năng kỹ thuật, giao tiếp và tư duy phản biện
+% 	\item Kỹ năng quản lý thời gian tốt hơn và hơn thế nữa
+% \end{itemize}
+
+
+% Nền tảng giáo dục cập nhật phải có tích hợp với:
+% \begin{itemize}
+% 	\item Lịch trực tuyến (Google, Calendly) để có cơ hội lên lịch cuộc gọi và trò chuyện, thiết lập lời nhắc và chọn ngày hoàn thành công việc, v.v.
+% 	\item Lưu trữ đám mây (Google, Dropbox)
+% 	\item Mạng xã hội (LinkedIn, Facebook) để kích hoạt chức năng chia sẻ xã hội và hoàn thiện hồ sơ người dùng
+% \end{itemize}
+% \subsubsubsection {Quản lý theo thời gian thực}
+% Trang tổng quan thống kê là một bảng trực tiếp để hiển thị số liệu thống kê của người dùng thông qua biểu đồ và sơ đồ. Trang tổng quan được sử dụng để theo dõi hoạt động của chuyên gia, xếp hạng, tỷ lệ thành công của người học, các môn học phổ biến nhất, v.v. Trang này cũng được nhóm hỗ trợ nền tảng sử dụng cho các nhu cầu nội bộ.
+
+% \subsubsection{Thuận lợi, khó khăn}
+% \subsubsubsection{Thuận lợi}
+% Đã từng có nhiều trải nghiệm với những nền tảng học trực tuyến
+% \subsubsubsection{Khó khăn}
+% Tìm kiếm nguồn tài liệu, giảng viên đáng tin cậy
+% \newpage
+% \subsection{Khảo sát người dùng về động lực và ý tưởng của dự án}
+% \begin{figure}[!htp]
+% 	\centering
+% 	\includegraphics[width=15cm]{research-1.png}
+% \end{figure}
+
+
+
+
+% \section{BUSINESS MODEL CANVAS}
+% \subsection{Customer Segments}
+% \begin{itemize}
+% 	\item Sinh viên, học sinh muốn bổ sung kiến thức
+% 	\item Sinh viên, học sinh không có thời gian đến làm muốn tự học tại nhà
+% \end{itemize}
+% \subsection{Value Propositions}
+% \begin{itemize}
+% 	\item Học và giảng dạy trực tuyến
+% 	\item Học ở mọi nơi, mọi lúc
+% 	\item Các khóa học là các môn học đại cương được giảng dạy tại các chương trình đại học
+% 	\item Mỗi khóa học được tổ chức theo từng chủ đề với bài tập chủ đề tương ứng
+% \end{itemize}
+% \subsection{Channels}
+% \begin{itemize}
+% 	\item Internet
+% 	\item Facebook: các trang đoàn hội của khoa, trường
+% 	\item Website
+% 	\item Email
+% \end{itemize}
+% \subsection{Customer Relationships}
+
+% \begin{figure}[!htp]
+% 	\centering
+% 	\includegraphics[width=15cm]{canvas.png}
+% \end{figure}
+
+
+
+% \section{XÂY DỰNG KẾ HOẠCH TIẾP THỊ SỐ - BÁN HÀNG}
+% \subsection{Các hoạt động cần thực hiện}
+% \subsubsection{Liên hệ với các đối tác tạo sản phẩm khóa học}
+% Liên hệ các giáo viên, giảng viên đại học, giáo sư, phó giáo sư, thạc sĩ, tiến sĩ có kinh nghiệm trong môn học cụ thể để hợp tác với công ty tạo ra sản phẩm là khóa học online theo tiêu chí của doanh nghiệp.\\
+% Ưu tiên lựa chọn các đối tác chuyên môn về khóa học nhằm mục đích tối ưu hóa chất lượng của sản phẩm
+% \subsubsection{Liên hệ với các đội tác marketing}
+% Chạy quảng cáo Affiliate, SEO trên các nền tảng web giáo dục như : Udemy, Geeksforgeeks, hoặc các trang web riêng của các trường học, đại học, cao đẳng, nghề.\\
+% Quảng bá sản phẩm trên các nền tảng thương mại điện thiên về giáo dục.
+% \subsection{Đối tác liên kết}
+% \subsubsection{Đối tác liên kết tạo ra sản phẩm}
+% Giáo viên, giảng viên đến từ các trường trung học phổ thông, đại học, cao đẳng, trường nghề.\\
+% Các chuyên gia về từng lĩnh vực cụ thể, ví dụ : tạo ra một khóa học mạng máy tính cần ít nhất 1 chuyên gia về mạng máy tính và ít nhất 1 giảng viên đại học đã từng dạy bộ môn mạng máy tính và có kinh nghiệm dạy học.\\
+% Các bạn sinh viên năm cuối chuyên ngành cụ thể, ví dụ : tạo ra một khóa học Toeic 450 cần tối thiểu 1 bạn sinh viên năm cuối chuyên ngành ngôn ngữ Anh hoặc các bạn sinh viên chuyên ngành sư phạm Anh, hoặc các bạn sinh viên có yêu thích ngôn ngữ và có TOEIC 700+ và có kinh nghiệm giảng dạy ít nhất 1 năm.\\
+
+
+
+% \section{CHI PHÍ ƯỚC TÍNH}
+% \subsection{Chi phí mua tên miền}
+% Tên miền là dòng chữ mà người dùng nhập vào các trình duyệt trên Internet để truy cập đến website của bạn. Mỗi website đều cần có địa chỉ website riêng, địa chỉ này cũng giống như địa chỉ nhà, rõ ràng dễ nhớ và đặc biệt nó không trùng lặp với các địa chỉ website khác. Website sẽ có tên miền Việt Nam (.vn). Do đó, chi phí thuê tên miền rơi vào khoảng 600.000 VNĐ.
+
+
+% \section{TRIỂN KHAI THỬ NGHIỆM}
+% \textbf{Tích hợp Google Analytic vào trang web}
+% \subsection{Cách tích hợp}
+% \noindent Bước 1: Tạo tài khoản \textbf{Google Analytic}: Vào trang  \href{https://analytics.google.com/}{https://analytics.google.com/} và bấm \textbf{Bắt đầu đo lường}
+% \begin{figure}[!htp]
+% 	\centering
+% 	\includegraphics[width=14cm]{GA1.png}
+% 	\caption{}
+% 	\label{fig:my_label}
+% \end{figure}
+
+% \newpage
+% \noindent Bước 2: Bạn điền \textbf{tên tài khoản} tùy ý rồi nhấp \textbf{Tiếp theo}.\\
+% \begin{figure}[!htp]
+% 	\centering
+% 	\includegraphics[width=14cm]{GA2.png}
+% 	\caption{}
+% 	\label{fig:my_label}
+% \end{figure}
+
+% \newpage
+% \noindent Bước 3: Bạn điền \textbf{Tên thuộc tính} tùy ý rồi chọn múi giờ là Việt Nam (GMT+07), chọn đơn vị tiền tệ là VND sau đó bấm \textbf{Tiếp theo}.\\
+% \begin{figure}[!htp]
+% 	\centering
+% 	\includegraphics[width=14cm]{GA3.png}
+% 	\caption{}
+% 	\label{fig:my_label}
+% \end{figure}
+% \newpage
+% \noindent Bước 4: Chọn quy mô doanh nghiệp và loại ngành. Ở đây chúng ta sẽ chọn quy mô từ 1 - 10 nhân viên. Sau đó bấm \textbf{Tạo}\\
+% \begin{figure}[!htp]
+% 	\centering
+% 	\includegraphics[width=14cm]{GA4.png}
+% 	\caption{}
+% 	\label{fig:my_label}
+% \end{figure}
+
+
+% \section{PHỤ LỤC}
+% \subsection{Tài liệu tham khảo}
+% \subsection{Link giao diện}
+% \href{https://conceptcourse.netlify.app/}{conceptcourse.netlify.app/}
+% \subsection{Link source code}
+% \href{https://github.com/bao-nguyenbku/e-commerce.git}{github.com/bao-nguyenbku/e-commerce.git}
+% \subsection{Video demo sản phẩm}
+% \href{}{}
+% \subsection{Bảng phân công nhiệm vụ và đánh giá}
+% \begin{center}
+% 	\begin{tabular}{ |c|c|m{13em}|c| }
+% 		\hline
+% 		\textbf{STT} & \textbf{Họ và tên}  & \textbf{Công việc}                                                                                                                   & Đánh giá \\
+% 		\hline
+% 		1            & Nguyễn Thiên Bảo   & Xây dựng kiến trúc thông tin, code giao diện MVP                                                                               & 100\%       \\
+% 		\hline
+% 		2            & Quang Chấn Vĩ        & Xây dựng business canvas model, code tích hợp Paypal, SMS email                                                                   & 100\%       \\
+% 		\hline
+% 		3            & Trịnh Duy Hưng       & Hoàn thiện động lực và ý tưởng của dự án, code giao diện học online                                               & 100\%       \\
+% 		\hline
+% 		4            & Lê Trung Hiếu        & Lập kế hoạch các hoạt động cần thực hiện, đối tác liên kế, thời gian                                         & 100\%       \\
+% 		\hline
+% 		5            & Nguyễn Ngô Gia Bảo & Chi phí ước tính: từ chuẩn bị, khởi tạo, thiết kế, xây dựng, triển khai, vận hành, tiếp thị, quảng bá & 100\%       \\
+% 		\hline
+% 		6            & Nguyễn Thái Linh     & Thiết kế kiến trúc thông tin                                                                                                    & 100\%       \\
+% 		\hline
+% 		7            & Vũ Huy Hoàng          & Xây dựng business canvas model                                                                                                       & 100\%       \\
+% 		\hline
+% 	\end{tabular}
+% \end{center}
+\end{document} 
